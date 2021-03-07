@@ -59,7 +59,7 @@ We can view just the crucial moment in the game where our champion overwrites zo
 #### end
 
 * -a, don't print *alive* operations (as prescribed by the subject). Much cleaner output.
-* -e, print "Game ended at cycle count: (cycle_count)".
+* -e, print cycle_count at end (how long the game is).
 
 ```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor -a -e```
 
@@ -67,9 +67,8 @@ We can view just the crucial moment in the game where our champion overwrites zo
 
 #### debugging
 
-* -op, print operations excecuted
-* -arg, print argument sizes
-
+* -op, print operations excecuted & argument sizes.
+* -arg, print values extracted from the coding byte.
 
 ## Assembler
 
