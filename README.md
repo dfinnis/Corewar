@@ -43,13 +43,6 @@ Some strategies:
 
 ### Flags
 
-* -a, don't print *alive* operations (as prescribed by the subject). Much cleaner output.
-* -e, print "Game ended at cycle count: (cycle_count)".
-
-```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor -a -e```
-
-<img src="https://github.com/dfinnis/Corewar/blob/master/img/ae.png" width="640">
-
 #### -v, vizualizer
 
 * -v [speed (1-100)], plays the game start to end without *-w* or *-dump*.
@@ -57,9 +50,20 @@ Some strategies:
 * -w nbr_cycles, wait *nbr_cycles* before starting vizualizer.
 * -dump nbr_cycles, dump virtual machine state *nbr_cycles* into game. In combination *-w* a specific period of the game can be viewed.
 
+We can view just the crucial moment in the game where our champion overwrites zork, after which zork calls *live* for our champion.
+
 ```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor -v -cp -w 2150 -dump 2400```
 
 ![v](https://github.com/dfinnis/Corewar/blob/master/img/v.gif)
+
+#### end
+
+* -a, don't print *alive* operations (as prescribed by the subject). Much cleaner output.
+* -e, print "Game ended at cycle count: (cycle_count)".
+
+```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor -a -e```
+
+<img src="https://github.com/dfinnis/Corewar/blob/master/img/ae.png">
 
 #### debugging
 
