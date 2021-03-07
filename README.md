@@ -39,7 +39,16 @@ Assemble champions from assembly (.s) to bytecode (.cor).
 
 ### Flags
 
+
+
+
 ## Virtual Machine
+
+
+
+### Flags
+
+
 
 
 ## Champion
@@ -47,8 +56,6 @@ Assemble champions from assembly (.s) to bytecode (.cor).
 the_best_player_around_the_whole_universe
 
 (anti-zork)
-
-### Flags
 
 
 ## Team
