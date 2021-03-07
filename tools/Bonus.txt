@@ -1,0 +1,13 @@
+#### -- BONUS -- ####
+1. visualiser:
+	- w start at specified cycle
+	- speed
+	- cp
+2. kill process sound
+3. debug mode/modes -op & -arg
+4. -i intro contestants
+5. -a don't print live operations
+6. -e print game ended at cycle count
+7. asm custom output location
+8. asm multiple files
+9. asm error messages
