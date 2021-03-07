@@ -23,22 +23,48 @@ Make the binaries asm and corewar.
 
 ```make```
 
-Run the virtual machine with assembled champions. You'll find some assembled champions in champions/compiled/.
+Run the virtual machine with 2-4 assembled champions as argument. You'll find some assembled champions in /champions/compiled/.
 
 ```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor```
 
 ![simple](https://github.com/dfinnis/Corewar/blob/master/img/simple.gif)
 
-Our champion (the_best_player_around_the_whole_universe) beat Zork!
+Our champion (the_best_player_around_the_whole_universe) beat Zork, great!
 
 
 ## Virtual Machine
 
+Champions are loaded into the virtual arena. The game ends when *cycle_to_die* reaches 0, or when all processes are dead. The last to have been reported alive wins.
 
+Some strategies:
+* Aim to execute *live* last.
+* *fork* to create more processes who work for you.
+* Overwrite enemy bytecode, evicerating or enslaving them.
 
 ### Flags
 
+* -a, don't print *alive* operations (as prescribed by the subject). Much cleaner output.
+* -e, print "Game ended at cycle count: (cycle_count)".
 
+```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor -a -e```
+
+<img src="https://github.com/dfinnis/Corewar/blob/master/img/ae.png" width="640">
+
+#### -v, vizualizer
+
+* -v [speed (1-100)], plays the game start to end without *-w* or *-dump*.
+* -cp, color process pointers according to which champion is parent.
+* -w nbr_cycles, wait *nbr_cycles* before starting vizualizer.
+* -dump nbr_cycles, dump virtual machine state *nbr_cycles* into game. In combination *-w* a specific period of the game can be viewed.
+
+```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor -v -cp -w 2150 -dump 2400```
+
+![v](https://github.com/dfinnis/Corewar/blob/master/img/v.gif)
+
+#### debugging
+
+* -op, print operations excecuted
+* -arg, print argument sizes
 
 
 ## Assembler
