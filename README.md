@@ -15,7 +15,41 @@ The goal of this project was to create:
 
 ## Getting Started
 
-## Flags
+First clone this repo to your machine.
+
+```git clone https://github.com/dfinnis/Corewar.git; cd Corewar```
+
+Make the binaries asm and corewar.
+
+```make```
+
+And run the virtual machine with assembled champions.
+
+```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor```
+
+
+
+## Assembler
+
+```asm```
+
+Assemble champions from assembly (.s) to bytecode (.cor).
+
+```./asm```
+
+### Flags
+
+## Virtual Machine
+
+
+## Champion
+
+the_best_player_around_the_whole_universe
+
+(anti-zork)
+
+### Flags
+
 
 ## Team
 
