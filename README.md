@@ -23,9 +23,21 @@ Make the binaries asm and corewar.
 
 ```make```
 
-And run the virtual machine with assembled champions.
+Run the virtual machine with assembled champions. You'll find some assembled champions in champions/compiled/.
 
 ```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor```
+
+![simple](https://github.com/dfinnis/Corewar/blob/master/img/simple.gif)
+
+Our champion (the_best_player_around_the_whole_universe) beat Zork!
+
+
+## Virtual Machine
+
+
+
+### Flags
+
 
 
 
@@ -39,14 +51,6 @@ Assemble champions from assembly (.s) to bytecode (.cor).
 
 ### Flags
 
-
-
-
-## Virtual Machine
-
-
-
-### Flags
 
 
 
