@@ -8,7 +8,7 @@ The goal of this project was to create:
 
 * An Assembler ```asm```, which compiles the champion assembly into bytecode.
 
-* A Virtual Machine ```corewar```, the battle arena where champions battle.
+* A Virtual Machine ```corewar```, the battle arena where champions fight to the death.
 
 #### Final Score 125/100
 
