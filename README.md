@@ -44,7 +44,7 @@ Champions battle to the death in the circular virtual memory arena.
 
 ### Flags
 
-#### -v, vizualizer
+#### vizualizer
 
 * -v [speed (1-100)], plays the game start to end without *-w* or *-dump*.
 * -cp, color process pointers according to which champion it works for (rather than spawned).
@@ -105,6 +105,8 @@ If the *.s* file is invalid, *asm* displays detailed error messages specifying l
 ## Gameplay example
 
 Let's see a later stage of a game with 4 players.
+
+```./corewar champions/compiled/Car.cor champions/compiled/Misaka_Mikoto.cor champions/compiled/Kittystrophic.cor champions/compiled/Octobre_Rouge_V4.2.cor -v -cp -w 10000```
 
 ![](https://github.com/dfinnis/Corewar/blob/master/img/example.gif)
 
