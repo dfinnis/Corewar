@@ -5,8 +5,8 @@
 The goal of [this project](https://github.com/dfinnis/Corewar/blob/master/subject.pdf) was to create:
 
 * A Champion (fighting program), written in assembly.
-* An Assembler *asm*, which compiles the champion assembly into bytecode.
-* A Virtual Machine *corewar*, the battle arena where champions fight to the death.
+* An Assembler - *asm*, which compiles the champion assembly into bytecode.
+* A Virtual Machine - *corewar*, the battle arena where champions fight to the death.
 
 #### Final Score 125/100
 
@@ -17,7 +17,7 @@ First clone this repo to your machine.
 
 ```git clone https://github.com/dfinnis/Corewar.git; cd Corewar```
 
-Make the binaries asm and corewar.
+Make the binaries *asm* and *corewar*.
 
 ```make```
 
@@ -45,7 +45,7 @@ Champions battle to the death in the circular virtual memory arena.
 ### vizualizer flags
 
 * -v [speed (1-100)], plays the game start to end without *-w* or *-dump*.
-* -cp, color process pointers according to which champion it works for (rather than spawned).
+* -cp, color process pointers according to which champion is parent.
 * -w nbr_cycles, wait *nbr_cycles* before starting vizualizer.
 * -dump nbr_cycles, dump virtual machine state *nbr_cycles* into game. In combination with *-w* a specific period of the game can be viewed.
 
