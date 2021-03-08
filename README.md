@@ -42,9 +42,7 @@ Some strategies:
 
 Champions battle to the death in the circular virtual memory arena.
 
-### Flags
-
-#### vizualizer
+### vizualizer flags
 
 * -v [speed (1-100)], plays the game start to end without *-w* or *-dump*.
 * -cp, color process pointers according to which champion it works for (rather than spawned).
@@ -57,7 +55,7 @@ We can view just the crucial moment in the game where our champion overwrites zo
 
 ![v](https://github.com/dfinnis/Corewar/blob/master/img/v.gif)
 
-#### end
+### end flags
 
 * -a, don't print *alive* operations (as prescribed by the subject). Much cleaner output.
 * -e, print cycle_count at end (how long the game is).
@@ -66,7 +64,7 @@ We can view just the crucial moment in the game where our champion overwrites zo
 
 <img src="https://github.com/dfinnis/Corewar/blob/master/img/ae.png">
 
-#### debugging
+### debug flags
 
 * -op, print operations excecuted & argument sizes.
 * -arg, print values extracted from the coding byte.
@@ -81,7 +79,7 @@ Zombie zork now calls *alive* for our champion, zork is defeated.
 
 <img src="https://github.com/dfinnis/Corewar/blob/master/img/champion.png" width="75%">
 
-Above *.s* assembly, below *.cor* assembled bytecode.
+Above is the *.s* assembly, below is the *.cor* assembled bytecode.
 
 <img src="https://github.com/dfinnis/Corewar/blob/master/img/champion2.png" width="75%">
 
