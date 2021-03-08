@@ -80,10 +80,14 @@ Zombie zork now calls *alive* for our champion, zork is defeated.
 
 <img src="https://github.com/dfinnis/Corewar/blob/master/img/champion.png" width="75%">
 
+Above .s assembly, below .cor assembled bytecode.
+
+<img src="https://github.com/dfinnis/Corewar/blob/master/img/champion2.png" width="75%">
+
 
 ## Assembler
 
-Run the assembler with one or more champion.s files as argument. The assembler assembles .s assembly to .cor bytecode, ready to be loaded into the VM. You'll find some assembly champions in champions/uncompiled/.
+Run the assembler with one or more champion.s files as argument. The assembler assembles .s assembly to .cor bytecode, ready to be loaded into the VM. You'll find some champion.s files in champions/uncompiled/.
 
 ```./asm champions/the_best_player_around_the_whole_universe.s```
 
