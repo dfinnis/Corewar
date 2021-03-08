@@ -48,7 +48,7 @@ Some strategies:
 * -v [speed (1-100)], plays the game start to end without *-w* or *-dump*.
 * -cp, color process pointers according to which champion is parent.
 * -w nbr_cycles, wait *nbr_cycles* before starting vizualizer.
-* -dump nbr_cycles, dump virtual machine state *nbr_cycles* into game. In combination *-w* a specific period of the game can be viewed.
+* -dump nbr_cycles, dump virtual machine state *nbr_cycles* into game. In combination with *-w* a specific period of the game can be viewed.
 
 We can view just the crucial moment in the game where our champion overwrites zork, after which zork calls *live* for our champion.
 
