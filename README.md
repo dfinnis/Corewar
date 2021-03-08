@@ -23,7 +23,7 @@ Make the binaries asm and corewar.
 
 ```make```
 
-Run the virtual machine with 2-4 assembled champions as argument. You'll find some assembled champions in /champions/compiled/.
+Run the virtual machine with 2-4 assembled champions as argument. You'll find some assembled champions in champions/compiled/.
 
 ```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor```
 
@@ -34,7 +34,7 @@ Our champion (the_best_player_around_the_whole_universe) beat Zork, great!
 
 ## Virtual Machine
 
-Champions are loaded into the virtual arena. The game ends when *cycle_to_die* reaches 0, or when all processes are dead. The last to have been reported alive wins.
+Champions are loaded into the circular virtual memory battle arena. The game ends when *cycle_to_die* reaches 0, or when all processes are dead. The last to have been reported alive wins.
 
 Some strategies:
 * Aim to execute *live* last.
@@ -46,7 +46,7 @@ Some strategies:
 #### -v, vizualizer
 
 * -v [speed (1-100)], plays the game start to end without *-w* or *-dump*.
-* -cp, color process pointers according to which champion is parent.
+* -cp, color process pointers according to which champion it works for (rather than spawned).
 * -w nbr_cycles, wait *nbr_cycles* before starting vizualizer.
 * -dump nbr_cycles, dump virtual machine state *nbr_cycles* into game. In combination with *-w* a specific period of the game can be viewed.
 
@@ -70,25 +70,31 @@ We can view just the crucial moment in the game where our champion overwrites zo
 * -op, print operations excecuted & argument sizes.
 * -arg, print values extracted from the coding byte.
 
-## Assembler
-
-```asm```
-
-Assemble champions from assembly (.s) to bytecode (.cor).
-
-```./asm```
-
-### Flags
-
-
-
-
 
 ## Champion
 
-the_best_player_around_the_whole_universe
+Our champion (the_best_player_around_the_whole_universe) was written to beat zork.
 
-(anti-zork)
+Our champion calls *alive*, forks itself and overwrites zork's id number with our champions id number.
+Zombie zork now calls *alive* for our champion, zork is defeated.
+
+<img src="https://github.com/dfinnis/Corewar/blob/master/img/champion.png" width="75%">
+
+
+## Assembler
+
+Run the assembler with one or more champion.s files as argument. The assembler assembles .s assembly to .cor bytecode, ready to be loaded into the VM. You'll find some assembly champions in champions/uncompiled/.
+
+```./asm champions/the_best_player_around_the_whole_universe.s```
+
+<img src="https://github.com/dfinnis/Corewar/blob/master/img/asm.png" width="80%">
+
+If the .s file is invalid, asm displays detailed error messages specifying line and column number in the assembly file.
+
+### Flags
+
+* -o <dest>, specify destination folder (default same as sourcefile).
+* -c, remove filesize limit.
 
 
 ## Team
