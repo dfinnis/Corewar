@@ -5,8 +5,8 @@
 The goal of [this project](https://github.com/dfinnis/Corewar/blob/master/subject.pdf) was to create:
 
 * A Champion (fighting program), written in assembly.
-* An Assembler ```asm```, which compiles the champion assembly into bytecode.
-* A Virtual Machine ```corewar```, the battle arena where champions fight to the death.
+* An Assembler *asm*, which compiles the champion assembly into bytecode.
+* A Virtual Machine *corewar*, the battle arena where champions fight to the death.
 
 #### Final Score 125/100
 
@@ -29,15 +29,18 @@ Run the virtual machine with 2-4 assembled champions as argument. You'll find so
 
 Our champion (the_best_player_around_the_whole_universe) beat Zork, great!
 
+## Gameplay
 
-## Virtual Machine
-
-Champions are loaded into the circular virtual memory battle arena. The game ends when *cycle_to_die* reaches 0, or when all processes are dead. The last to have been reported alive wins.
+The game ends when *cycle_to_die* reaches 0, or when all processes are dead. The last to have been reported alive wins.
 
 Some strategies:
 * Aim to execute *live* last.
 * *fork* to create more processes who work for you.
 * Overwrite enemy bytecode, evicerating or enslaving them.
+
+## Virtual Machine
+
+Champions battle to the death in the circular virtual memory arena.
 
 ### Flags
 
@@ -97,6 +100,13 @@ If the .s file is invalid, asm displays detailed error messages specifying line 
 
 * -o <dest>, specify destination folder (default same as sourcefile).
 * -c, remove filesize limit.
+
+
+## Gameplay example
+
+Let's see a later stage of a game with 4 players.
+
+![](https://github.com/dfinnis/Corewar/blob/master/img/example.gif)
 
 
 ## Team
