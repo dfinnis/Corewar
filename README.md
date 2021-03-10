@@ -55,7 +55,7 @@ We can view just the crucial moment in the game where our champion overwrites zo
 
 ![v](https://github.com/dfinnis/Corewar/blob/master/img/v.gif)
 
-Vizualizer built with [ft_printf](https://github.com/dfinnis/ft_printf).
+Visualizer built with [ft_printf](https://github.com/dfinnis/ft_printf).
 
 ### end flags
 
