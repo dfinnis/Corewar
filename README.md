@@ -13,16 +13,13 @@ The goal of [this project](https://github.com/dfinnis/Corewar/blob/master/subjec
 
 ## Getting Started
 
-First clone this repo to your machine.
-
+First clone this repo to your machine. <br>
 ```git clone https://github.com/dfinnis/Corewar.git; cd Corewar```
 
-Make the binaries *asm* and *corewar*.
-
+Make the binaries *asm* and *corewar*. <br>
 ```make```
 
-Run the virtual machine with 2-4 assembled champions as argument. You'll find some assembled champions in champions/compiled/.
-
+Run the virtual machine with 2-4 assembled champions as argument. You'll find some assembled champions in champions/compiled/. <br>
 ```./corewar champions/the_best_player_around_the_whole_universe.cor champions/compiled/zork.cor```
 
 ![simple](https://github.com/dfinnis/Corewar/blob/master/img/simple.gif)
